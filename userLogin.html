@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Login / register material design form</title>
+    <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/css/materialize.min.css'>
+    <style>
+    body {
+        /*background: #f5f5f5;*/
+          background-image: url(/images/WorkingOut4.png);
+        background-repeat: no-repeat;
+        background-size: 100%;
+    }
+
+    h5 {
+        font-weight: 400;
+    }
+
+    .container {
+        margin-top: 80px;
+        width: 400px;
+        height: 700px;
+    }
+
+    .tabs .indicator {
+        background-color: #e0f2f1;
+        height: 60px;
+        opacity: 0.3;
+    }
+
+    .form-container {
+        padding: 40px;
+        padding-top: 10px;
+    }
+
+    .confirmation-tabs-btn {
+        position: absolute;
+    }
+
+    #logo {
+        max-width: 250px;
+        display: block;
+        margin: 0 auto;
+        width: 90%;
+        float: top;
+    }
+    </style>
+</head>
+
+<body>
+  <ul>
+<li id="button5"><a href="/" class="waves-effect waves-light btn cyan accent-3"><i class="material-icons left">home
+            </i></a></li>
+        </ul>
+         <a href="#!" class="brand-logo"> <img class="responsive-img" id="logo" src="images/1080LogoColor.png"> </a>
+    <div class="container white z-depth-2">
+        <ul class="tabs light cyan accent-3">
+            <li class="tab col s3"><a class="white-text active" href="#login">login</a></li>
+            <!-- <li class="tab col s3"><a class="white-text" href="#register">register</a></li> -->
+        </ul>
+        <div id="login" class="col s12">
+            <form class="col s12">
+                <div class="form-container">
+                    <h3 class="cyan-text">Hello</h3>
+                    <!-- <div class="row">
+                        <div class="input-field col s12">
+                            <input id="email" type="email" class="validate">
+                            <label for="email">Email</label>
+                        </div>
+                    </div> -->
+                    <div class="row">
+                        <div class="input-field col s6">
+                            <input id="last_name" type="text" class="validate">
+                            <label for="last_name">First Name</label>
+                        </div>
+                        <div class="input-field col s6">
+                            <input id="last_name" type="text" class="validate">
+                            <label for="last_name">Last Name</label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="input-field col s12">
+                            <input id="email" type="email" class="validate">
+                            <label for="email">Email</label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="input-field col s12">
+                            <input id="email-confirm" type="number" class="validate">
+                            <label for="email-confirm">Phone Number</label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="input-field col s12">
+                            <input id="password" type="password" class="validate">
+                            <label for="password">Zip Code</label>
+                        </div>
+                    </div>
+                   <!--  <div class="row">
+                        <div class="input-field col s12">
+                            <input id="password" type="password" class="validate">
+                            <label for="password">Password</label>
+                        </div>
+                    </div> -->   
+                    <br>
+                    <center>
+                        <button class="btn waves-effect waves-light cyan accent-3"  type="submit" name="action"><a href="/userSubmit">Connect</button>
+                        <br>
+                        <br>
+                        <!-- <a href="">Forgotten password?</a> -->
+                    </center>
+                </div>
+            </form>
+        </div>
+        <!-- <div id="register" class="col s12">
+            <form class="col s12">
+                <div class="form-container">
+                    <h3 class="cyan-text">Welcome</h3> -->
+                    <!-- <div class="row">
+                        <div class="input-field col s6">
+                            <input id="last_name" type="text" class="validate">
+                            <label for="last_name">First Name</label>
+                        </div>
+                        <div class="input-field col s6">
+                            <input id="last_name" type="text" class="validate">
+                            <label for="last_name">Last Name</label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="input-field col s12">
+                            <input id="email" type="email" class="validate">
+                            <label for="email">Email</label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="input-field col s12">
+                            <input id="email-confirm" type="email" class="validate">
+                            <label for="email-confirm">Phone Number</label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="input-field col s12">
+                            <input id="password" type="password" class="validate">
+                            <label for="password">Zip Code</label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="input-field col s12">
+                            <input id="password-confirm" type="password" class="validate">
+                            <label for="password-confirm">Password</label>
+                        </div>
+                    </div>
+                    <center>
+                        <button class="btn waves-effect waves-light btn cyan accent-3" type="submit" name="action">Submit</button>
+                    </center>
+                </div> -->
+            </form>
+        </div>
+    </div>
+    <script src='https://code.jquery.com/jquery-2.1.1.min.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/js/materialize.min.js'></script>
+    <script src="js/index.js"></script>
+</body>
+
+</html>
