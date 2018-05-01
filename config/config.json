@@ -2,7 +2,7 @@
   "development": {
     "username": "root",
     "password": "AnaBanana1994",
-    "database": "project3",
+    "database": "educoDB",
     "host": "127.0.0.1",
     "dialect": "mysql"
   },
