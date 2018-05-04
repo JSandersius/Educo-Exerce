@@ -21,4 +21,4 @@
 // will need google api’s/paypal
 // mongoose DB
 // full CRUD for forms. “pings”
-// Encrypt for logins
+// Encrypt for logins -->  passport 
