@@ -6,7 +6,6 @@
 
 // We feel this is a valuable app because there is nothing really like it on the market, and it takes out the middle man of going thru a gym to find a trainer. It is straight customer to service provider reaction. 
 
-
 // screen 1- home screen that requires a user to log in, and then answer some simple questions for the type of workout that they want, the time, and their location.
 
 // screen 2- when there is a match, a picture and information of their trainer will pop up and also which gym they will be going to if not specified beforehand 
