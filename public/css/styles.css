@@ -20,6 +20,27 @@ button.edit {
   margin-top: 30px;
 }
 
+/*userSubmit*/
+    #title {
+        color: white;
+    }
+
+    #trainerFirstName {
+        color: white;
+    }
+
+    #trainerLastName {
+        color: white;
+    }
+
+    #trainerCertification {
+        color: white;
+    }
+
+    #trainerNumber {
+        color: white;
+    }
+
 
 
 
