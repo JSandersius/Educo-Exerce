@@ -8,7 +8,7 @@ var mongoose = require("mongoose");
 var path = require("path");
 var Sequelize = require('sequelize');
 var mysql2 = require('mysql2');
-var path = require("path");
+
 
 // Sets up the Express App
 // =============================================================
@@ -17,22 +17,13 @@ var PORT = process.env.PORT || 3000;
 
 
 // Requiring our models for syncing
-var db = require("./models/index.js");             //when inlcuding either of these lines, terminal reads "cannot find module sequalize"
+var db = require("./models/index.js");             //when including either of these lines, terminal reads "cannot find module sequalize"
 // var models = require('./models/sequelize');   
 
 
 // Static directory
 app.use(express.static("public"));
 
-
-// Syncing our sequelize models and then starting our Express app
-// =============================================================
-
-db.sequelize.sync({ force: true }).then(function() {
-    app.listen(PORT, function() {
-        console.log("App now listening on PORT:" + PORT);
-    });
-});
 
 // Routes
 // =============================================================
@@ -114,3 +105,16 @@ app.get("/trainerSubmit", function(req, res) {
 });
 
 app.use(express.static('images'));
+
+
+
+
+
+// Syncing our sequelize models and then starting our Express app
+// =============================================================
+
+db.sequelize.sync({ force: true }).then(function() {
+    app.listen(PORT, function() {
+        console.log("App now listening on PORT:" + PORT);
+    });
+});
