@@ -7,8 +7,8 @@ var bodyParser = require("body-parser");
 var mongoose = require("mongoose");
 var path = require("path");
 var Sequelize = require('sequelize');
-var mysql2 = require('mysql2')
-
+var mysql2 = require('mysql2');
+var path = require("path");
 
 // Sets up the Express App
 // =============================================================
@@ -33,18 +33,6 @@ db.sequelize.sync({ force: true }).then(function() {
         console.log("App now listening on PORT:" + PORT);
     });
 });
-
-
-
-// ____________________
-
-// *********************************************************************************
-// html-routes.js - this file offers a set of routes for sending users to the various html pages
-// *********************************************************************************
-
-// Dependencies
-// =============================================================
-var path = require("path");
 
 // Routes
 // =============================================================
