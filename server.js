@@ -8,6 +8,9 @@ var mongoose = require("mongoose");
 var path = require("path");
 var Sequelize = require('sequelize');
 var mysql2 = require('mysql2');
+// Requiring our models for syncing
+var db = require("./models/index.js");         
+// var models = require('./models/sequelize');  
 
 
 // Sets up the Express App
@@ -16,9 +19,7 @@ var app = express();
 var PORT = process.env.PORT || 3000;
 
 
-// Requiring our models for syncing
-var db = require("./models/index.js");             //when including either of these lines, terminal reads "cannot find module sequalize"
-// var models = require('./models/sequelize');   
+ 
 
 
 // Static directory
