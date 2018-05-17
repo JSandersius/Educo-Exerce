@@ -19,9 +19,6 @@ var app = express();
 var PORT = process.env.PORT || 3000;
 
 
- 
-
-
 // Static directory
 app.use(express.static("public"));
 
@@ -33,7 +30,6 @@ module.exports = function(app) {
     // Each of the below routes just handles the HTML page that the user gets sent to.
 
     // index route loads view.html
-
 
 //_________________
     app.get("/", function(req, res) {
@@ -53,8 +49,6 @@ module.exports = function(app) {
 
 };
 
-//_____________
-
 // Routes
 // =============================================================
 
@@ -62,7 +56,6 @@ require("./routes/api-routes.js")(app);
 require("./routes/html-routes.js")(app);
 
 // Sets up the Express app to handle data parsing
-
 // parse application/x-www-form-urlencoded
 app.use(bodyParser.urlencoded({ extended: false }));
 
