@@ -8,26 +8,26 @@ var path = require("path");
 
 // Routes
 // =============================================================
-module.exports = function(app) {
+module.exports = function (app) {
 
     // Each of the below routes just handles the HTML page that the user gets sent to.
 
     // index route loads view.html
 
 
-//_________________
-    app.get("/", function(req, res) {
+    //_________________
+    app.get("/", function (req, res) {
         res.sendFile(path.join(__dirname, "../public/blog.html"));
     });
 
 
-    app.get("/cms", function(req, res) {
+    app.get("/cms", function (req, res) {
         res.sendFile(path.join(__dirname, "../public/cms.html"));
     });
 
 
     // blog route loads blog.html
-    app.get("/blog", function(req, res) {
+    app.get("/blog", function (req, res) {
         res.sendFile(path.join(__dirname, "../public/blog.html"));
     });
 
@@ -56,32 +56,32 @@ app.engine("handlebars", exphbs({ defaultLayout: "test" }));
 app.set("view engine", "handlebars");
 
 
-app.get("/", function(req, res) {
+app.get("/", function (req, res) {
     res.sendFile(path.join(__dirname, "./home.html"));
 });
 
-app.get("/userLogin", function(req, res) {
+app.get("/userLogin", function (req, res) {
 
     res.sendFile(path.join(__dirname, "./userLogin.html"));
 });
 
-app.get("/trainerLogin", function(req, res) {
+app.get("/trainerLogin", function (req, res) {
     res.sendFile(path.join(__dirname, "./trainerLogin.html"));
 });
 
-app.get("/contactUs", function(req, res) {
+app.get("/contactUs", function (req, res) {
     res.sendFile(path.join(__dirname, "./contactUs.html"));
 });
 
-app.get("/aboutUs", function(req, res) {
+app.get("/aboutUs", function (req, res) {
     res.sendFile(path.join(__dirname, "./aboutUs.html"));
 });
 
-app.get("/userSubmit", function(req, res) {
+app.get("/userSubmit", function (req, res) {
     res.sendFile(path.join(__dirname, "./userSubmit.html"));
 });
 
-app.get("/trainerSubmit", function(req, res) {
+app.get("/trainerSubmit", function (req, res) {
     res.sendFile(path.join(__dirname, "./trainerSubmit.html"));
 });
 
